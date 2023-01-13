@@ -1,0 +1,16 @@
+<html>
+    <p>The persons are :</p>
+    <p id="a"></p>
+    <script>
+        const person=["raj","ram","anbu"];
+        document.getElementById("a").innerHTML=person+"<br>";
+        let text="<ul>"
+            person.push("aswin");
+            for(let i=0;i<person.length;i++)
+            {
+            text+="<li>"+person[i]+"</li>"+"<br>";
+            }
+            text+="</ul>";
+            document.getElementById("a").innerHTML=text;        
+    </script>
+</html>
