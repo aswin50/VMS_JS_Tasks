@@ -1,0 +1,9 @@
+<html>
+    <p id="a"></p>
+    <script>
+        let text="hello";
+        let encode=window.btoa(text);
+        let decode=window.atob(encode);
+        document.getElementById("a").innerHTML=decode;
+    </script>
+</html>
