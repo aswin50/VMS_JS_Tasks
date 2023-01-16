@@ -1,0 +1,20 @@
+<html>
+    <input id="a" type="text">
+    <button onclick="myfunc()">go</button>
+    <p id="b"></p>
+    <script>
+        function myfunc()
+        {
+            const m= document.getElementById("b");
+       m.innerHTML="";
+       let x=document.getElementById("a").value;
+            try{
+                if(x>10) throw "too high"
+            }
+            catch(err){
+                m.innerHTML="input is"+err;
+            }
+        }
+    </script>
+
+</html>
